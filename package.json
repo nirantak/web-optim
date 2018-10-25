@@ -1,0 +1,30 @@
+{
+  "name": "web_optim",
+  "version": "1.0.0",
+  "description": "Optimize static assets for the web",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp watch",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirantak/web_optim.git"
+  },
+  "author": "Nirantak Raghav",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nirantak/web_optim/issues"
+  },
+  "homepage": "https://nirantak.com",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {}
+}
