@@ -7,6 +7,9 @@
     "start": "gulp watch",
     "build": "gulp"
   },
+  "pre-commit": [
+    "build"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nirantak/web_optim.git"
@@ -17,6 +20,16 @@
     "url": "https://github.com/nirantak/web_optim/issues"
   },
   "homepage": "https://nirantak.com",
+  "keywords": [
+    "optimize",
+    "static",
+    "web",
+    "assets"
+  ],
+  "engines": {
+    "node": "11.0.0",
+    "npm": "6.4.1"
+  },
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
@@ -24,7 +37,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-rename": "^1.4.0",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "pre-commit": "^1.2.2"
   },
   "dependencies": {}
 }
