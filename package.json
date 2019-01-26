@@ -5,7 +5,11 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp watch",
-    "build": "gulp"
+    "build": "gulp",
+    "img": "gulp img",
+    "css": "gulp css",
+    "js": "gulp js",
+    "gulp": "gulp"
   },
   "pre-commit": [
     "build"
@@ -19,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/nirantak/web_optim/issues"
   },
-  "homepage": "https://nirantak.com",
+  "homepage": "https://nirantak.com/",
   "keywords": [
     "optimize",
     "static",
@@ -27,15 +31,15 @@
     "assets"
   ],
   "engines": {
-    "node": "11.0.0",
-    "npm": "6.4.1"
+    "node": "11.8.0",
+    "npm": "6.7.0"
   },
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
-    "gulp-clean-css": "^3.10.0",
+    "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^5.0.3",
     "gulp-rename": "^1.4.0",
     "gulp-uglify": "^3.0.1",
     "pre-commit": "^1.2.2"
