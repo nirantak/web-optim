@@ -7,26 +7,26 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 
 const cleancss_Options = {
-  debug: true
+  debug: true,
 };
 const autoprefixer_Options = {
   browsers: ["last 2 versions"],
-  cascade: false
+  cascade: false,
 };
 const imagemin_Plugins = [
   imagemin.gifsicle({ interlaced: true }),
-  imagemin.jpegtran({ progressive: true }),
+  imagemin.mozjpeg({ progressive: true }),
   imagemin.optipng({ optimizationLevel: 5 }),
   imagemin.svgo({
-    plugins: [{ removeViewBox: true }, { cleanupIDs: false }]
-  })
+    plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
+  }),
 ];
 const imagemin_Options = {
-  verbose: true
+  verbose: true,
 };
 
 //Optimize Images
-gulp.task("img-min", function() {
+gulp.task("img-min", function () {
   return gulp
     .src("src/img/*")
     .pipe(imagemin(imagemin_Plugins, imagemin_Options))
@@ -34,7 +34,7 @@ gulp.task("img-min", function() {
 });
 
 // Minify CSS
-gulp.task("minify-css", function() {
+gulp.task("minify-css", function () {
   return gulp
     .src("src/css/*.css")
     .pipe(autoprefixer(autoprefixer_Options))
@@ -44,11 +44,11 @@ gulp.task("minify-css", function() {
 });
 
 // Uglify JS
-gulp.task("uglify-js", function() {
+gulp.task("uglify-js", function () {
   return gulp
     .src("src/js/*.js")
     .pipe(
-      uglify().on("error", function(e) {
+      uglify().on("error", function (e) {
         console.log(e);
       })
     )
@@ -65,7 +65,7 @@ gulp.task("js", gulp.parallel("uglify-js"));
 gulp.task("default", gulp.parallel("img", "css", "js"));
 
 // Watch files for changes
-gulp.task("watch", function() {
+gulp.task("watch", function () {
   gulp.watch("src/img/*", gulp.parallel("img"));
   gulp.watch("src/css/*.css", gulp.parallel("css"));
   gulp.watch("src/js/*.js", gulp.parallel("js"));
