@@ -1,10 +1,10 @@
-# web_optim
+# web-optim
 
 > _Optimize Static Web Assets_
 
 ## Table of Contents
 
-- [web_optim](#weboptim)
+- [web-optim](#web-optim)
   - [Table of Contents](#table-of-contents)
   - [Local Installation](#local-installation)
   - [Working](#working)
@@ -16,7 +16,7 @@
 - Install environment
 
   ```shell
-  $ git clone https://github.com/nirantak/web_optim.git && cd web_optim
+  $ git clone https://github.com/nirantak/web-optim.git && cd web-optim
   $ npm install
   ```
 

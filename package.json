@@ -1,5 +1,5 @@
 {
-  "name": "web_optim",
+  "name": "web-optim",
   "version": "1.0.0",
   "description": "Optimize static assets for the web",
   "main": "gulpfile.js",
@@ -16,12 +16,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nirantak/web_optim.git"
+    "url": "git+https://github.com/nirantak/web-optim.git"
   },
   "author": "Nirantak Raghav",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/nirantak/web_optim/issues"
+    "url": "https://github.com/nirantak/web-optim/issues"
   },
   "homepage": "https://nirantak.com/",
   "keywords": [
