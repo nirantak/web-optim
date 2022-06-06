@@ -3,6 +3,14 @@
 .vscode
 .DS_Store
 
+src/css/*
+src/img/*
+src/js/*
+
+dist/css/*
+dist/img/*
+dist/js/*
+
 ### Node ###
 # Logs
 logs

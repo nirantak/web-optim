@@ -30,10 +30,6 @@
     "web",
     "assets"
   ],
-  "engines": {
-    "node": "16.5.0",
-    "npm": "7.20.0"
-  },
   "dependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",

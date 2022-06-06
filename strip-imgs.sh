@@ -14,4 +14,4 @@ do
             ;;
     esac
 done
-echo -e "\e[32m* Removed all metadata *\e[0m"
+echo -e "\x1B[32m* Removed all metadata *\x1B[0m"
